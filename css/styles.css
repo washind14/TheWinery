@@ -20,7 +20,7 @@ body {
 
 header {
     background: rgb(20, 2, 2);
-    width: 150px;
+    width: 180px;
     height: 100%;
     position: fixed;
     top: 0;
@@ -64,48 +64,68 @@ nav a:hover {
 }
 
 #logo {
-    margin-top: 100px;
-    margin-bottom: 30px;
+    background-image: url("../images/the Winery logo_small.png");
+    margin-top: 0;
+    margin-bottom: 100px;
+    /* margin-left: 35px; */
 }
 
 .row {
-    background: beige;
+    /* background: beige; */
     /* height: 400px; */
     padding: 5px;
+    
     overflow: hidden;
 }
 
 .third {
     width: 300px;
     height: 300px;
+    border-style: solid;
     background-image: url("../images/chelsea-pridham-MMOXoxE_Gj0-unsplash.jpg");
-    margin-right: 5px;
+    margin-right: 15px;
     float: left;
 }
 
+
+
 .third:last-of-type {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 #wrapper {
-    margin: 140px 0 0 250px;
+    margin: 140px 0 0 240px;
     /* padding: 20px 0; */
     width: 980px;
 
 }
+
+
+#wrapper-about {
+    margin: 70px 0 0 260px;
+    /* padding: 20px 0; */
+    width: 980px;
+
+}
+
 
 main {
     width: 500px;
     float: left;
     height: 600px;
     background: lightblue;
+    background-image: url(../images/wineBarrels.jpg);
+    border: solid;
 }
 
 aside {
     width: 340px;
     float: right;
-    height: 400px;
-    background: salmon;
+    height: 500px;
+    background: rgb(67, 59, 58);
+    opacity: .9;
+    /* background-image: url("../images/the Winery about us.png"); */
+    
 }
 
 footer {
@@ -130,12 +150,18 @@ footer a {
 }
 
 img {
-    display: block;
-    max-width: 100%;
+    display: inline-block;
+    max-width: 50%;
 }
 
 /* Typography */
 h1 {
     text-align: center;
     font-size: 3em;
+}
+
+p {
+    color: white;
+    margin: 1em;             
+    text-indent: 3ch;
 }
