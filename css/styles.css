@@ -1,0 +1,136 @@
+/* Styles for our wine website */
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+body {
+    /* background: orange; */
+    background-image: url(../images/grid-16.png);
+    background-repeat: repeat-y;
+    background-position: 220px 0;
+}
+
+header {
+    background: #ccc;
+    width: 190px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav li {
+    height: 40px;
+    line-height: 40px;
+    background: #800;
+    position: relative;
+    
+}
+
+.drop-down {
+    display: none;
+    
+}
+
+nav li:hover .drop-down {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    z-index: 1;
+    width: 140px;
+    list-style-type: none;
+   
+
+}
+
+nav a {
+    color: #fff;
+    padding-left: 15px;
+    text-decoration: none;
+    display: block;
+
+}
+
+nav a:hover {
+    background: #500;
+}
+
+#logo {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.row {
+    background: beige;
+    /* height: 400px; */
+    padding: 20px;
+    overflow: hidden;
+}
+
+.third {
+    width: 300px;
+    height: 300px;
+    background: pink;
+    margin-right: 20px;
+    float: left;
+}
+
+.third:last-of-type {
+    margin-right: 0;
+}
+
+#wrapper {
+    margin: 140px 0 0 200px;
+    /* padding: 20px 0; */
+    width: 980px;
+
+}
+
+main {
+    width: 500px;
+    float: left;
+    height: 600px;
+    background: lightblue;
+}
+
+aside {
+    width: 340px;
+    float: right;
+    height: 400px;
+    background: salmon;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 180px;
+    background: #ccc;
+}
+
+footer li {
+    float: left;
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+footer a {
+    color: #500;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
