@@ -1,4 +1,4 @@
-/* Styles for our wine website */
+/* Styles for wine website */
 
 * {
 padding: 0;
@@ -9,59 +9,10 @@ box-sizing: border-box;
 
 body {
     color: #fff;
-    /* background: orange; */
-    /* background-image: url(../images/grid-16.png); */
     background: #500;
-    background-image: url("../images/smallbrandy-turner-nZ37ifip5VM-unsplash.jpg");
-    /* background-repeat: repeat-y;
-    background-position: 220px 0; */
-    
+    background-image: url("../images/smallbrandy-turner-nZ37ifip5VM-unsplash.jpg");  
 }
 
-header {
-    background: rgb(20, 2, 2);
-    width: 180px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-nav li {
-    height: 40px;
-    line-height: 40px;
-    /* background: #800; */
-    position: relative;
-    
-}
-
-.drop-down {
-    display: none;
-    
-}
-
-nav li:hover .drop-down {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 120px;
-    z-index: 1;
-    width: 140px;
-    list-style-type: none;
-   
-
-}
-
-nav a {
-    color: #fff;
-    padding-left: 15px;
-    text-decoration: none;
-    display: block;
-
-}
-
-nav a:hover {
-    background: #500;
-}
 
 #logo {
     background-image: url("../images/the Winery logo_small.png");
@@ -88,18 +39,15 @@ nav a:hover {
 }
 
 
-
 .third:last-of-type {
     margin-right: 0;
 }
 
 #wrapper {
     margin: 200px 0 0 340px;
-    /* padding: 20px 0; */
-    width: 980px;
-
+    padding: 40px 0;
+    width: 700px;
 }
-
 
 #wrapper-about {
     margin: 70px 0 0 260px;
@@ -124,29 +72,7 @@ aside {
     height: 500px;
     background: rgb(67, 59, 58);
     opacity: .9;
-    /* background-image: url("../images/the Winery about us.png"); */
-    
-}
-
-footer {
-    color: #fff;
-    height: 50px;
-    line-height: 60px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 180px;
-    background: rgb(20, 2, 2);
-}
-
-footer li {
-    float: left;
-    margin-right: 30px;
-    list-style-type: none;
-}
-
-footer a {
-    color: #fff;
+    /* background-image: url("../images/the Winery about us.png"); */ 
 }
 
 img {
@@ -154,14 +80,92 @@ img {
     max-width: 50%;
 }
 
-/* Typography */
+/* TYPOGRAPHY */
 h1 {
+    text-shadow: #FC0 1px 0 10px;
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 p {
     color: white;
     margin: 1em;             
     text-indent: 3ch;
+}
+/* SIDEBAR STYLING */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(20, 2, 2);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    transform: translateX(-250px);
+    opacity: 0.7;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+
+.main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.openbtn {
+    font-size: 20px;
+    /* color: white; */
+    cursor: pointer;
+    /* padding: none; */
+    border: none;
+    /* opacity: 0.1; */
+}
+
+
+#main {
+    margin-left: 0;
+}
+
+.dropdown-btn {
+    font-size: 25px;
+    border: none;
+    background: none;
+    color: #818181;
+    padding: 10px 15px;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+}
+
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+.sidebar .dropdown-btn:hover + .dropdown-container {
+    display: block;
+}
+
+.dropdown-container a {
+    font-size: 20px;
 }

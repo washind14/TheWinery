@@ -1,5 +1,6 @@
 {
   "git.autorefresh": true,
   "git.enabled": true,
-  "search.useGlobalIgnoreFiles": true
+  "search.useGlobalIgnoreFiles": true,
+  "liveServer.settings.port": 5501
 }

@@ -7,25 +7,32 @@
 </head>
 
 <body class="about">
-<header>
-<a href="index.html"><img id="logo" src="images/the Winery logo.png" alt="logo"></a>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="#">Wines</a>
-        <ul class="drop-down">
-            <li><a href="cabernet.html">Cabernet</a></li>
-            <li><a href="merlot.html">Merlot</a></li>
-            <li><a href="malbec.html">Malbec</a></li>
-        </ul>
-        </li>
-        <li><a href="tours.htnl">Tours</a></li>
-        <li><a href="contact">Contact</a></li>
-    </ul>
-</nav>
-</header>
+    <div id="sidebar" class="sidebar">
+        <!-- <a href="#" class="closebtn" onclick="toggleSidebar()">×</a> -->
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="javascript:void(0)" class="dropdown-btn" onclick="toggleDropdown()">Wines</a>
+        <div class="dropdown-container">
+            <a href="cabernet.html">Cabernet Sauvignon</a>
+            <a href="pinot.html">Pinot Noir</a>
+            <a href="merlot.html">Merlot</a>
+            <a href="syrah.html">Syrah/Shiraz</a>
+            <a href="chardonnay.html">Chardonnay</a>
+            <a href="savignon.html">Sauvignon Blanc</a>
+            <a href="riesling.html">Riesling</a>
+            <a href="zinfandel.html">Zinfandel</a>
+            <a href="malbec.html">Malbec</a>
+            <a href="rose.html">Rosé</a>
+        </div>
+        <a href="tours.html">Tours</a></li>
+        <a href="contact.html">Contact</a>
+        
+    </div>
+
+    <div id="main" class="main">
+        <button class="openbtn" onclick="toggleSidebar()">☰</button>
+    </div>
 
 <div id="wrapper-about">
 <h1>About Our Company</h1>
@@ -49,13 +56,6 @@
 
 </div> <!-- end row -->
 </div> <!-- close wrapper -->
-<footer>
-<ul>
-<li>Copyright 2024 &copy</li>
-<li>All Rights Reserved</li>
-<li><a href="">Terms of use</a></li>
-</ul>
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
